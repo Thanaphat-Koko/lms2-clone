@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top"></div>
+        <div class="header-bottom">
+            <span class="logo">LMS2</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="login-container">
+            <form class="login-form" action="login.php" method="POST">
+                <!-- คอลัมน์ซ้าย: ช่องกรอกข้อมูล, checkbox, และปุ่ม Log in -->
+                <div class="left-column">
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember username</label>
+                    </div>
+                    <!-- ปุ่ม Log in อยู่ใต้ checkbox -->
+                    <button type="submit" class="login-btn" href="https://lms2.psu.ac.th">Log in</button>
+                </div>
+
+                <!-- คอลัมน์ขวา: ลิงก์และข้อความสนับสนุน, ปุ่ม Log in as a guest -->
+                <div class="right-column">
+                    <a href="#" class="forgot-password">Forgotten your username or password?</a>
+                    <p class="support-text">Cookies must be enabled in your browser <span class="info">?</span></p>
+                    <p class="support-text">Some courses may allow guest access</p>
+                    <!-- ปุ่ม Log in as a guest -->
+                    <a href="#" class="guest-btn">Log in as a guest</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>LMS2@PSU is operated by <a href="#">EILA</a>.</p>
+                <p>Need support? Please contact <a href="mailto:lms-support@psu.ac.th">lms-support@psu.ac.th</a> or Tel. 0-7428-9217</p>
+                <p><a href="#">MS-Teams LMS-Support</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="#">Get the mobile app</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

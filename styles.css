@@ -1,0 +1,195 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+.header-top {
+    background-color: #00796B; /* สีเขียวเข้ม */
+    height: 50px; /* ความสูงของแถบด้านบน */
+}
+
+.header-bottom {
+    background-color: #4DB6AC; /* สีเขียวอ่อน */
+    height: 78px; /* ความสูงของแถบด้านล่าง */
+    border-top: 2px solid white; /* เส้นสีขาวคั่น */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px; /* ระยะห่างระหว่างขอบขวา */
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem; /* ขนาดของฟอนต์ */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    text-transform: uppercase;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.login-container {
+    border: 1px solid #CCCCCC;
+    padding: 25px;
+    border-radius: 0;
+    display: inline-block;
+    width: 600px;
+    text-align: center;
+}
+
+/* Form Layout */
+.login-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* คอลัมน์ซ้าย: ช่องกรอกข้อมูล, checkbox, ปุ่ม Log in */
+.left-column {
+    flex: 1;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.login-btn {
+    background-color: #455A64; /* สีเดียวกันกับ Log in as a guest */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* คอลัมน์ขวา: ข้อความและลิงก์สนับสนุน, ปุ่ม Log in as a guest */
+.right-column {
+    flex: 1;
+    text-align: left;
+}
+
+.forgot-password {
+    color: #0288D1;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.support-text {
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.info {
+    background-color: #0288D1;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+/* ปรับสีของปุ่ม Log in as a guest ให้เป็นสีเดียวกับปุ่ม Log in */
+.guest-btn {
+    background-color: #455A64; /* สีเดียวกันกับ Log in */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+}
+
+/* Footer */
+footer {
+    background-color: #686868; /* สีพื้นหลังเทาเข้ม */
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%; /* ครอบคลุมเต็มหน้าจอ */
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%; /* เส้นสีขาวครอบคลุมเต็มจอ */
+    height: 1px; /* ความสูงของเส้น */
+    background-color: white; /* สีของเส้น */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%; /* จำกัดความกว้างของเนื้อหา */
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative; /* ให้คอนเทนต์จัดวางตามตำแหน่ง */
+}
+
+
+
+.footer-left, .footer-right {
+    font-weight: 300; /* ทำให้ข้อความตัวบาง */
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none; /* เพิ่มเอฟเฟกต์เมื่อ hover */
+}
